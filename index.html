@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore flexible subscription plans with Planify. Choose the perfect plan for your needs.">
+
+    <meta name="theme-color" content="#0B1120">
+
+    <title>Planify | Smart Pricing Plans</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="pricing-section">
+
+        <!-- HEADER -->
+        <header class="section-header">
+
+            <span class="section-tag">
+                SIMPLE & TRANSPARENT PRICING
+            </span>
+
+            <h1>
+                Choose Your Perfect Plan
+            </h1>
+
+            <p>
+                Flexible pricing designed to help you grow.
+                Start small and upgrade whenever you need.
+            </p>
+
+        </header>
+
+
+        <!-- BILLING TOGGLE -->
+        <div class="billing-toggle"
+             role="group"
+             aria-label="Choose billing period">
+
+            <button
+                id="monthly"
+                class="billing-btn active"
+                type="button"
+                aria-pressed="true">
+
+                Monthly
+
+            </button>
+
+            <button
+                id="yearly"
+                class="billing-btn"
+                type="button"
+                aria-pressed="false">
+
+                Yearly
+
+            </button>
+
+            <span class="discount-label">
+                SAVE 20%
+            </span>
+
+        </div>
+
+
+        <!-- PRICING CARDS -->
+        <div class="pricing-container">
+
+
+            <!-- STARTER PLAN -->
+            <article class="pricing-card">
+
+                <div class="plan-header">
+
+                    <span class="plan-icon" aria-hidden="true">
+                        🚀
+                    </span>
+
+                    <h2>Starter</h2>
+
+                    <p>
+                        Perfect for beginners getting started.
+                    </p>
+
+                </div>
+
+
+                <div class="price-box" aria-live="polite">
+
+                    <span class="currency">₹</span>
+
+                    <span
+                        class="price"
+                        data-monthly="499"
+                        data-yearly="4790">
+
+                        499
+
+                    </span>
+
+                    <span class="unit">
+                        per month
+                    </span>
+
+                </div>
+
+
+                <p class="savings" hidden></p>
+
+
+                <button
+                    class="plan-btn"
+                    type="button"
+                    data-plan="Starter">
+
+                    Get Started
+
+                </button>
+
+
+                <div class="features">
+
+                    <h3>What's included</h3>
+
+                    <ul>
+                        <li>✓ Access to basic features</li>
+                        <li>✓ 5 active projects</li>
+                        <li>✓ Basic analytics</li>
+                        <li>✓ Email support</li>
+                        <li>✓ 5 GB cloud storage</li>
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROFESSIONAL PLAN -->
+            <article class="pricing-card popular">
+
+                <div class="badge-container">
+
+                    <span class="popular-badge">
+                        MOST POPULAR
+                    </span>
+
+                    <span class="value-badge">
+                        BEST VALUE
+                    </span>
+
+                </div>
+
+
+                <div class="plan-header">
+
+                    <span class="plan-icon" aria-hidden="true">
+                        ⚡
+                    </span>
+
+                    <h2>Professional</h2>
+
+                    <p>
+                        For individuals ready to grow faster.
+                    </p>
+
+                </div>
+
+
+                <div class="price-box" aria-live="polite">
+
+                    <span class="currency">₹</span>
+
+                    <span
+                        class="price"
+                        data-monthly="999"
+                        data-yearly="9590">
+
+                        999
+
+                    </span>
+
+                    <span class="unit">
+                        per month
+                    </span>
+
+                </div>
+
+
+                <p class="savings" hidden></p>
+
+
+                <button
+                    class="plan-btn featured-btn"
+                    type="button"
+                    data-plan="Professional">
+
+                    Choose Pro
+
+                </button>
+
+
+                <div class="features">
+
+                    <h3>Everything in Starter, plus</h3>
+
+                    <ul>
+                        <li>✓ Unlimited projects</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ 50 GB cloud storage</li>
+                        <li>✓ Team collaboration</li>
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ENTERPRISE PLAN -->
+            <article class="pricing-card">
+
+                <div class="plan-header">
+
+                    <span class="plan-icon" aria-hidden="true">
+                        💎
+                    </span>
+
+                    <h2>Enterprise</h2>
+
+                    <p>
+                        Advanced solutions for growing teams.
+                    </p>
+
+                </div>
+
+
+                <div class="price-box" aria-live="polite">
+
+                    <span class="currency">₹</span>
+
+                    <span
+                        class="price"
+                        data-monthly="1999"
+                        data-yearly="19190">
+
+                        1999
+
+                    </span>
+
+                    <span class="unit">
+                        per month
+                    </span>
+
+                </div>
+
+
+                <p class="savings" hidden></p>
+
+
+                <button
+                    class="plan-btn"
+                    type="button"
+                    data-plan="Enterprise">
+
+                    Contact Sales
+
+                </button>
+
+
+                <div class="features">
+
+                    <h3>Everything in Professional, plus</h3>
+
+                    <ul>
+                        <li>✓ Unlimited team members</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ 500 GB cloud storage</li>
+                        <li>✓ Advanced security</li>
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- CUSTOM SOLUTION SECTION -->
+        <section class="custom-section">
+
+            <h2>Need something different?</h2>
+
+            <p>
+                Have special requirements?
+                Our team can help you find the right solution.
+            </p>
+
+            <button
+                class="custom-btn"
+                type="button"
+                data-plan="Custom Solution">
+
+                Discuss Your Requirements
+
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="pricing-footer">
+
+            <p>
+                Simple pricing. Smarter decisions.
+            </p>
+
+            <p>
+                © 2026 Planify. All rights reserved.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- PLAN SELECTION DIALOG -->
+    <dialog
+        id="plan-dialog"
+        class="plan-dialog"
+        aria-labelledby="dialog-title">
+
+        <div class="dialog-content">
+
+            <button
+                id="close-dialog"
+                class="close-dialog"
+                type="button"
+                aria-label="Close dialog">
+
+                &times;
+
+            </button>
+
+            <span class="dialog-icon" aria-hidden="true">
+                ✨
+            </span>
+
+            <h2 id="dialog-title">
+                Great Choice!
+            </h2>
+
+            <p id="dialog-message">
+                You selected a Planify plan.
+            </p>
+
+            <p class="dialog-note">
+                This is a demo selection.
+                No payment or subscription has been created.
+            </p>
+
+            <button
+                id="confirm-dialog"
+                class="confirm-btn"
+                type="button">
+
+                Got it
+
+            </button>
+
+        </div>
+
+    </dialog>
+
+</body>
+
+</html>
